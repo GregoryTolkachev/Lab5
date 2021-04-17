@@ -39,7 +39,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        UserData.Name = "bob";
+        UserData.Name = "Greg";
         UserData.ComponentCount++;
         using var ctx = ContextFactory.CreateDbContext();
         blog.AddRange(await ctx.Entries.OrderByDescending(e => e.Time).ToListAsync());
